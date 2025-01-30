@@ -13,6 +13,7 @@ public class UIHandler : MonoBehaviour
     public float displayTime = 4.0f;
     private VisualElement m_NonPlayerDialogue;
     private float m_TimerDisplay;
+    //private VisualElement m_EnemyText;
 
 
     // Awake is called when the script instance is being loaded (in this situation, when the game scene loads)
@@ -27,13 +28,13 @@ public class UIHandler : MonoBehaviour
         UIDocument uiDocument = GetComponent<UIDocument>();
         m_Healthbar = uiDocument.rootVisualElement.Q<VisualElement>("HealthBar");
         SetHealthValue(1.0f);
+        //m_EnemyText = uiDocument.rootVisualElement.Q<Label>("TextoEnemigos");
+
 
 
         m_NonPlayerDialogue = uiDocument.rootVisualElement.Q<VisualElement>("NPCDialogue");
         m_NonPlayerDialogue.style.display = DisplayStyle.None;
         m_TimerDisplay = -1.0f;
-
-
     }
 
 

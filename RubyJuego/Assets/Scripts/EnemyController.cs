@@ -29,6 +29,7 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         timer = changeTime;
         audioSource = GetComponent<AudioSource>();
+        EnemiesContainer.instance.AddEnemie();
 
     }
 
@@ -104,6 +105,7 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         audioSource.Stop();
         smokeEffect.Stop();
+        EnemiesContainer.instance.RemoveEnemie();
     }
 
 

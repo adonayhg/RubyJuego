@@ -7,4 +7,5 @@
         <ui:VisualElement name="CharacterPortrait" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Ducko/UI/CharacterPortrait.png?fileID=21300000&amp;guid=0332b35b8fe3cf8458eb0558889493d1&amp;type=3#CharacterPortrait&quot;); -unity-background-scale-mode: scale-to-fit; position: absolute; height: 129px; width: 80px; top: 2px; left: 9px;" />
     </ui:VisualElement>
     <ui:Instance template="NPCDialogue" name="NPCDialogue" style="position: absolute; height: 127px; width: 828px; top: 78%; left: 10%; right: 10%; bottom: 0;" />
+    <ui:VisualElement name="ContadorEnemigos" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Ruby/Characters/Enemy.png?fileID=21300000&amp;guid=b0ac58a254361ce469cab127f982a84d&amp;type=3#Enemy&quot;); height: 62px; width: 45px; position: absolute; top: 31px; left: 708px;" />
 </ui:UXML>
